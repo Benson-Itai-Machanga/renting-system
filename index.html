@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>123Hub</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/leaflet.css">
+	<link rel="stylesheet" type="text/css" href="css/net.css">
+	<script src="lib/jquery.js"></script>
+	<script src="leaflet/leaflet.js"></script>
+</head>
+<body>
+	<div id='map'></div>
+	<div id="main">
+		<div id="upperAndLower">
+			<div id="upperBar">
+				<div id="companyLogo">123Hub</div>
+				<div id="cityName">Gweru City</div>
+				<div id="news" class="infor" target='NewsInfo'>News</div>
+				<div id="about" class="infor" target='AboutUsInfo'>About Us</div>
+				<div id="ODK" class="icons">
+					<img src="icons/cloud-computing.png">
+				</div>
+			</div>
+			<div id="lowerDiv">
+				<div id="menuPannel">
+					<div id="querryHouseData" class="UploadInfo">
+						<div id="QuerryMenuRadio">
+							<div id="upperQuerry">
+								<div id="power_Q" class="radioQgroup">
+									<i class="italics_">Power Source :</i>
+									<select id="powerSource_">
+										<option id="Zesa" value="Zesa" class="RadioHouseGroup">Zesa</option>
+										<option id="Solar" value="Solar" class="RadioHouseGroup">Solar</option>
+										<option id="BothPower" value="Both" class="RadioHouseGroup">Both</option>
+										<option id="NonePower" value="None" class="RadioHouseGroup">None</option>
+									</select>
+								  	<!--input type="radio" name="power_source" value="Zesa" class="RadioHouseGroup"> Zesa
+									<input type="radio" name="power_source" value="Solar" class="RadioHouseGroup"> Solar
+									<input type="radio" name="power_source" value="Zesa & Solar" class="RadioHouseGroup"> Both
+									<input type="radio" name="power_source" value="None" class="RadioHouseGroup"> None-->
+								</div>
+								<div id="reserve_Q" class="radioQgroup">
+									<i class="italics_">Reservours :</i>
+									<select id="Reservours_">
+										<option id="Tank" value="Tank" class="RadioHouseGroup">Tank</option>
+										<option id="NoneReserv" value="None" class="RadioHouseGroup">None</option>
+									</select>
+									<!--input type="radio" name="reservours" value="Tank" class="RadioHouseGroup"> Tank
+									<input type="radio" name="reservours" value="No Tank" class="RadioHouseGroup"> None -->
+								</div>
+							</div>
+							<div id="lowerQuerry"> 
+								<div id="internet_Q" class="radioQgroup">
+									<i class="italics_">Internet :</i>
+									<select id="internet_">
+										<option id="Wifi" value="Wifi" class="RadioHouseGroup">Wifi</option>
+										<option id="NoneWifi" value="None" class="RadioHouseGroup">None</option>
+									</select>
+									<!--input type="radio" name="internet" value="Wifi" class="RadioHouseGroup"> Wifi
+									<input type="radio" name="internet" value="No Wifi" class="RadioHouseGroup"> None-->
+								</div>
+								<div id="security_Q" class="radioQgroup">
+									<i class="italics_"> Security :</i>
+									<select id="Security_">
+										<option id="Durahall" value="Durahall" class="RadioHouseGroup">Durahall</option>
+										<option id="Fence" value="Fence" class="RadioHouseGroup">Fence</option>
+										<option id="NoneSecur" value="None" class="RadioHouseGroup">None</option>
+									</select>
+									<!--input type="radio" name="security" value="Durahall" class="RadioHouseGroup"> Durahall
+									<input type="radio" name="security" value="Fence" class="RadioHouseGroup"> Fence
+									<input type="radio" name="security" value="None" class="RadioHouseGroup"> None -->
+								</div>
+							</div>
+							<div style="display: flex;">
+								<button id="applyRadioRequest" class="infor" target='results'>Apply</button>
+								<button id="allDataQuerry">All</button>
+							</div>
+							<i class="italics_">select price:</i>
+							<input type="checkbox" name="" id="priceRangeCheckbox">
+							<i class="italics_">show on map:</i>
+							<input type="checkbox" name="" id="displayImages"><br>
+							<div id="minMaxPriceContainer" style="display:none;">
+								<i class="italics_"> Price ($) range: </i>
+								<input type="search" id="minimumPrice" name="" class="priceRange">
+								<i class="italics_"> to </i>
+								<input type="search" id="maximumPrice" name="" class="priceRange">
+							</div>
+							
+						</div>
+						<div ></div>            
+					</div>
+				</div>
+				<div id="resultsDiv">
+					<div id="resultsDivInner">
+						<div id="results" class="information" style="display:none;"></div>
+						<div id="NewsInfo" class="information" style="display:none;"> News</div>
+						<div id="AboutUsInfo" class="information" style="display:none;"> 
+							123Hub is a Web GIS System developed by Midlands State University, Surveying And Geomatics students. This system's aims to help students in search of offres accommodation.
+						</div>
+					</div>
+					<div id="minimiseIncidentResults">x</div>
+				</div><br>
+				<div id="resultsInformation" style="display:none;">
+					Name (C/T):<br>
+					<input id="RetName" class="informationRetrievd" type="" name="" disabled ="true"><br>
+					<div style="display:flex;" id="TELandRoomP">
+						<div id="phoneNumDiv">
+							Phone Number<br>
+							<input id="RetTel" class="informationRetrievdSub" type="" name="" disabled ="true"><br>
+						</div>
+						<div id="RoomPDiv">
+							Room Price<br>
+							<input id="RetRoomPrice" class="informationRetrievdSub" type="" name="" disabled ="true">
+						</div>
+					</div>
+					address:<br>
+					<input id="RetAddress" class="informationRetrievd" type="" name="" disabled ="true"><br>
+					Extras:<br>
+					<input id="RetFacil" class="informationRetrievd" type="" name="" disabled ="true">
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+	<script src="leaflet/L.TileLayer.BetterWMS.js"></script>
+	<script src="js/switch.js"></script>
+	<script src="js/FirstScriptFile.js"></script>
+</html>

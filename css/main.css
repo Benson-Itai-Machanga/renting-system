@@ -1,0 +1,479 @@
+#main
+{
+  z-index: 1;
+  font-size: 13px;
+  font-family: Futura Md BT;
+  display: block;
+}
+
+#upperBar
+{
+
+  position: relative;
+  min-height: 50px;
+  width: 100%;
+  background: #007199;
+  border: transparent;
+  margin-bottom: -1px;
+}
+#results
+{
+
+}
+
+#resultsInformation
+{
+  position: relative;
+  padding: 3px;
+  width: 100%;
+  height: 200px;
+  transition: 1s ease;
+  background: whitesmoke;
+}
+
+#resultsDiv
+{
+  position: relative;
+  padding: 3px;
+  width: 100%;
+  background: whitesmoke;
+}
+
+#resultsDivInner
+{
+  background: #E3E3E3;
+  border-top:  1px;
+  overflow-y: scroll;
+}
+
+#lowerDiv
+{
+  position: relative;
+  display: block;
+  width: 30%;
+}
+
+#menuPannel
+{
+  border: transparent;
+  background: lightgrey;
+  /*1353A5 blue */
+  width: 100%;
+  margin-right: 2px;
+}
+
+#map
+{
+  cursor: pointer;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+#companyLogo
+{
+  margin-top: 12px;
+  margin-left: 12px;
+  position: absolute;
+  background: white;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  z-index: 1;
+  width: 5%;
+  padding: 3px;
+/*  height: 32px;  */
+  color: #DE352E;
+}
+
+#cityName
+{ 
+  border: none;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  transform: translateY(0);
+  transition: transform 0.3s;
+  font-family: Bahnschrift;
+  text-align: center;
+  margin-top: 12px;
+  margin-left: 200px;
+  position: absolute;
+  background: #62534D;
+  color: white;
+  z-index: 1;
+  width: 7%;
+  padding: 3px;
+  transition: 0.6s ease;
+ /* height: 32px; */
+}
+
+#cityName:hover
+{
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#news
+{
+  margin-top: 12px;
+  margin-left: 88%;
+  margin-right: -80px;
+  position: absolute;
+  border: 1px solid white;
+  border-radius: 2px;
+  text-align: center;
+  z-index: 1;
+  width: 4%;
+  padding: 1.5px;
+  color: white;
+  cursor: pointer;
+}
+
+#news:hover
+{
+  transition: 0.3s;
+  background: #E9354B;
+}
+
+#about
+{
+  margin-top: 12px;
+  margin-left: 93%;
+  margin-right: -90px;
+  position: absolute;
+  border: 1px solid white;
+  border-radius: 2px;  
+  text-align: center;
+  z-index: 1;
+  width: 5%;
+  padding: 1.5px;
+  color: white;
+  cursor: pointer;
+}
+
+#about:hover
+{
+  transition: 0.3s;
+  background: #7E3862;
+}
+
+#minimiseIncidentResults
+{
+  width: 100%;
+  position: inherit;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  color: black;
+  background-color: #E7C4C1;
+  transition: 0.3s ease;
+}
+
+#minimiseIncidentResults:hover
+{
+  cursor: pointer;
+  color: white;
+  background-color: #B52B37;
+}
+
+#ODK
+{
+  margin-top: 9px;
+  margin-left: 85%;
+  margin-right: -80px;
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+  cursor: pointer;
+}
+
+#ODK img
+{
+  height: 35px;
+  width: 35px;
+  border-radius: 3px;
+  padding: 3px;
+}
+
+.UploadQuerrySubPanels
+{
+  color: white;
+  border: transparent;
+  background-color: #0193db;
+    margin-left: 3px;
+} 
+
+#UploadQuerryPanel
+{
+  margin-top: 3px;
+  align-items: center;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}   
+
+.UploadQuerrySubPanels:hover
+{
+  cursor: pointer;
+}
+
+#UpperPannelUpload
+{
+  display: flex;
+}
+
+.myHouseInputsInfo
+{
+  padding: 3px;
+}
+
+.houseGroup
+{
+  margin-top: 5px;
+  border-bottom: 1px solid white;
+}
+
+#landloardInputs
+{
+  border-right: 1px solid white;
+  padding: 3px;
+  background-color: #e4dcd4;
+  width: 50%;
+}
+
+#HouseInputs
+{
+  width: 50%;
+  background-color: #e4dcd4;
+  /*background-color: #d6d9dc;*/
+  display: block;
+}
+
+.italics_
+{
+  color: #2f0610;
+  padding: 0.5px;
+  border: 1px solid #fbfbfb;
+}
+
+.RadioHouseGroup
+{
+  cursor: pointer;
+}
+
+#PictureInputs
+{
+  display: flex;
+}
+
+#PictureLeftInputs
+{
+  width: 50%;
+}
+
+#PictureRightInputs
+{
+  width: 50%;
+}
+
+#picture-input2
+{
+  padding-top: 3px;
+}
+
+.submit
+{
+  padding-top: 3px;
+}
+
+#submit
+{
+  background-color: lightgrey;
+  width: 100%;
+  text-align: center;
+  border: transparent;
+}
+
+#submit:hover
+{
+  background-color: #96A0A2;
+  color: white;
+  cursor: pointer;
+}
+
+#QuerryMenuRadio
+{
+  border-right: 1px solid white;
+  padding: 3px;
+  background-color: #e4dcd4;
+  display: block;
+}
+.radioQgroup
+{
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  width: 50%;
+  margin-top: 5px;
+  border-bottom: 1px solid white;
+}
+
+#power_Q
+{
+  width: 50%;
+  border-right: 1px solid white;
+  padding-left: 4px;
+}
+
+#reserve_Q
+{
+  width: 50%;
+  padding-left: 4px;
+}
+
+#internet_Q
+{
+  width: 50%;
+  border-right: 1px solid white;
+  padding-left: 4px;
+}
+
+#security_Q
+{
+  width: 50%;
+  padding-left: 4px;
+}
+
+#upperQuerry
+{
+  display: flex;
+}
+
+#lowerQuerry
+{
+  display: flex;
+}
+
+.priceRange
+{
+  width: 20%;
+  padding-left: 4px;
+}
+
+#priceRangeCheckbox
+{
+  padding-top: 3px;
+}
+
+#applyRadioRequest
+{
+  background-color: #3998B5;
+  margin-bottom: 1px;
+  width: 90%;
+  padding: 3px;
+  color: white;
+  text-align: center;
+  border: transparent;
+  transition: 0.3s ease;
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#applyRadioRequest:hover
+{
+  background-color: #0B5972;
+  cursor: pointer;
+}
+
+#allDataQuerry
+{
+  margin-left: 4px;
+  background-color: #3998B5;
+  margin-bottom: 1px;
+  width: 8%;
+  padding: 3px;
+  color: white;
+  text-align: center;
+  border: transparent;
+  transition: 0.3s ease;
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#allDataQuerry:hover
+{
+  background-color: #0B5972;
+  cursor: pointer;
+}
+
+.incidentAddress
+{
+  position: relative;
+  display: block;
+  background: #BDBDBD;
+  cursor: pointer;
+  border-bottom: 1px dotted #E2E0DE;
+  color: #000A3A;
+  text-align: center; 
+}
+
+.incidentAddress:hover
+{
+  color: white;
+  background:  #A02545;
+}
+
+.first_imageDiv
+{
+  height: 100%;
+  width: 100%;
+}
+
+#first_imageDiv
+{
+  background-color: lightgrey;
+  margin-top: -22%;
+  margin-left: 150%;
+  height: 650px;
+  width:  650px;
+  border: 1px solid skyblue;
+}
+
+#uploadResults
+{
+  border-style: outset;
+  margin-top: 3px;
+  padding-top: 3px;
+  height: 250px;
+  width: 100%;
+  border: 1px ;
+  overflow-y: scroll;
+}
+
+.informationRetrievd
+{
+  width: 100%;
+}
+
+.informationRetrievdSub
+{
+  width: 100%;
+}
+
+#TELandRoomP
+{
+  width: 100%;
+}
+
+
+#RoomPDiv
+{
+  width: 50%;
+}
+
+#phoneNumDiv
+{
+  margin-right: 3px;
+  width: 50%;
+}
